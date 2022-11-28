@@ -31,5 +31,12 @@ public class Main {
                 System.out.println(a + " год является високосным");
             }
         }
+        //Task 6 7 14 21 28 35 42 49 56 63 70 77 84 91 98
+        System.out.println();
+        System.out.println("Task 6");
+        for (int n = 7; n <= 98; n += 7) {
+            System.out.print(" " + n);
+
+        }
     }
 }
