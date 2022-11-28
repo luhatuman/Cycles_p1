@@ -36,7 +36,12 @@ public class Main {
         System.out.println("Task 6");
         for (int n = 7; n <= 98; n += 7) {
             System.out.print(" " + n);
-
+        }
+        //Task 7 1 2 4 8 16 32 64 128 256 512
+        System.out.println("\n");
+        System.out.println("Task 7");
+        for (int n = 1; n <= 512; n *= 2) {
+            System.out.print(" " + n);
         }
     }
 }
