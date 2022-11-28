@@ -52,5 +52,15 @@ public class Main {
             total += money;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
+        //Task 9
+        System.out.println();
+        System.out.println("Task 9");
+        int summ = 29000;
+        float totalMoney = 0f;
+        for (int i = 1; i <= 12; i++) {
+            totalMoney += totalMoney / 100;
+            totalMoney += summ;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalMoney + " рублей");
+        }
     }
 }
