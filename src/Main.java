@@ -23,5 +23,13 @@ public class Main {
         for (int f = 10; f >= -10; f--) {
             System.out.print(" " + f);
         }
+        //Task 5 Високосные годы 1904 - 2096
+        System.out.println("\n");
+        System.out.println("Task 5");
+        for (int a = 1904; a <= 2096; a ++) {
+            if (a %4 == 0) {
+                System.out.println(a + " год является високосным");
+            }
+        }
     }
 }
