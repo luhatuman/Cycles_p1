@@ -117,5 +117,16 @@ public class Main {
             if (month2 % 6 == 0)
                 System.out.println("Месяц " + month2 + ", сумма накоплений равна " + vasiaSavings1 + " рублей");
         }
+        //Cycles part 2, Task 4.3
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.3");
+        float vasiaSavings2 = 15_000f;
+        int month3 = 1;
+        while (month3 <= 12*9) {
+            vasiaSavings2 += vasiaSavings2 * 0.07;
+            month3++;
+            if (month3 % 6 == 0)
+                System.out.println("Месяц " + month3 + ", сумма накоплений равна " + vasiaSavings2 + " рублей");
+        }
     }
 }
