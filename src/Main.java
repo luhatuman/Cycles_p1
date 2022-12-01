@@ -1,5 +1,156 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        //Task 1
+        System.out.println("Task 1");
+        for (int f = 1; f <= 10; f++) {
+            System.out.println(f);
+        }
+        //Task 2
+        System.out.println();
+        System.out.println("Task 2");
+        for (int f = 10; f >= 1; f--) {
+            System.out.println(f);
+        }
+        //Task 3
+        System.out.println();
+        System.out.println("Task 3");
+        for (int f = 0; f <= 17; f += 2) {
+            System.out.println(f);
+        }
+        //Task 4
+        System.out.println();
+        System.out.println("Task 4");
+        for (int f = 10; f >= -10; f--) {
+            System.out.print(" " + f);
+        }
+        //Task 5 Високосные годы 1904 - 2096
+        System.out.println("\n");
+        System.out.println("Task 5");
+        for (int a = 1904; a <= 2096; a ++) {
+            if (a %4 == 0) {
+                System.out.println(a + " год является високосным");
+            }
+        }
+        //Task 6 7 14 21 28 35 42 49 56 63 70 77 84 91 98
+        System.out.println();
+        System.out.println("Task 6");
+        for (int n = 7; n <= 98; n += 7) {
+            System.out.print(" " + n);
+        }
+        //Task 7 1 2 4 8 16 32 64 128 256 512
+        System.out.println("\n");
+        System.out.println("Task 7");
+        for (int n = 1; n <= 512; n *= 2) {
+            System.out.print(" " + n);
+        }
+        //Task 8
+        System.out.println("\n");
+        System.out.println("Task 8");
+        int money = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total += money;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
+        //Task 9
+        System.out.println();
+        System.out.println("Task 9");
+        int summ = 29000;
+        float totalMoney = 0f;
+        for (int i = 1; i <= 12; i++) {
+            totalMoney += totalMoney / 100;
+            totalMoney += summ;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalMoney + " рублей");
+        }
+        //Cycles part 2, Task 1
+        System.out.println();
+        System.out.println("Cycles part 2, Task 1");
+        float savings = 0f;
+        int month = 0;
+        while (savings <= 2_459_000) {
+            savings += savings / 100;
+            savings += 15_000;
+            month++;
+        }
+        System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей");
+        //Cycles part 2, Task 2
+        System.out.println();
+        System.out.println("Cycles part 2, Task 2");
+        int i = 0;
+        while (i < 10) {
+            i++;
+            System.out.print(" " + i);
+        }
+        System.out.println();
+        for (i = 10; i >= 1; i--) {
+            System.out.print(" " + i);
+        }
+        //Cycles part 2, Task 3
+        System.out.println("\n");
+        System.out.println("Cycles part 2, Task 3");
+        int population = 12_000_000;
+        int fertility = 17; // на 1000
+        int mortality = 8; // на 1000
+                for (int age = 1; age <= 10; age++) {
+            population += population / 1000 * (fertility-mortality);
+            System.out.println("Год " + age + " численность населения составляет " + population);
+        }
+        //Cycles part 2, Task 4.1
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.1");
+        float vasiaSavings = 15_000f;
+        int month1 = 1;
+        System.out.println("Месяц " + month1 + ", сумма накоплений равна " + vasiaSavings + " рублей");
+                while (vasiaSavings <= 12_000_000) {
+            vasiaSavings += vasiaSavings * 0.07;
+            month1++;
+            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + vasiaSavings + " рублей");
+        }
+        //Cycles part 2, Task 4.2
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.2");
+        float vasiaSavings1 = 15_000f;
+        int month2 = 1;
+        while (vasiaSavings1 <= 12_000_000) {
+            vasiaSavings1 += vasiaSavings1 * 0.07;
+            month2++;
+            if (month2 % 6 == 0)
+                System.out.println("Месяц " + month2 + ", сумма накоплений равна " + vasiaSavings1 + " рублей");
+        }
+        //Cycles part 2, Task 4.3
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.3");
+        float vasiaSavings2 = 15_000f;
+        int month3 = 1;
+        while (month3 <= 12*9) {
+            vasiaSavings2 += vasiaSavings2 * 0.07;
+            month3++;
+            if (month3 % 6 == 0)
+                System.out.println("Месяц " + month3 + ", сумма накоплений равна " + vasiaSavings2 + " рублей");
+        }
+        //Cycles part 2, Task 4.4
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.4");
+        int Friday = 3;
+        for (; Friday <= 31 ; Friday += 7) {
+            System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо поготовить отчёт!");
+        }
+        //Cycles part 2, Task 6.1
+        System.out.println();
+        System.out.println("Cycles part 2, Task 6.1");
+        int zeroYear = 0;
+        int lastYear = 2122;
+        while (zeroYear < lastYear) {
+            zeroYear += 79;
+            if (zeroYear > 1822 && zeroYear < 2122) {
+                System.out.println(zeroYear);
+            }
+        }
+        //Cycles part 2, Task 6.2
+        System.out.println();
+        System.out.println("Cycles part 2, Task 6.2");
+        for (int t = 1; t <= 10; t++) {
+            System.out.println("2*" + t + "=" + t*2);
+        }
     }
 }
