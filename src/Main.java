@@ -128,5 +128,12 @@ public class Main {
             if (month3 % 6 == 0)
                 System.out.println("Месяц " + month3 + ", сумма накоплений равна " + vasiaSavings2 + " рублей");
         }
+        //Cycles part 2, Task 4.4
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.4");
+        int Friday = 3;
+        for (; Friday < 31 ; Friday = Friday + 7) {
+            System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо поготовить отчёт!");
+        }
     }
 }
