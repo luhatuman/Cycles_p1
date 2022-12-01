@@ -132,7 +132,7 @@ public class Main {
         System.out.println();
         System.out.println("Cycles part 2, Task 4.4");
         int Friday = 3;
-        for (; Friday < 31 ; Friday = Friday + 7) {
+        for (; Friday <= 31 ; Friday = Friday + 7) {
             System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо поготовить отчёт!");
         }
     }
