@@ -132,8 +132,19 @@ public class Main {
         System.out.println();
         System.out.println("Cycles part 2, Task 4.4");
         int Friday = 3;
-        for (; Friday <= 31 ; Friday = Friday + 7) {
+        for (; Friday <= 31 ; Friday += 7) {
             System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо поготовить отчёт!");
+        }
+        //Cycles part 2, Task 6.1
+        System.out.println();
+        System.out.println("Cycles part 2, Task 6.1");
+        int zeroYear = 0;
+        int lastYear = 2122;
+        while (zeroYear < lastYear) {
+            zeroYear += 79;
+            if (zeroYear > 1822 && zeroYear < 2122) {
+                System.out.println(zeroYear);
+            }
         }
     }
 }
