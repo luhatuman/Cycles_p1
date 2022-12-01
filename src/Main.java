@@ -95,7 +95,7 @@ public class Main {
             population += population / 1000 * (fertility-mortality);
             System.out.println("Год " + age + " численность населения составляет " + population);
         }
-        //Cycles part 2, Task 4
+        //Cycles part 2, Task 4.1
         System.out.println();
         System.out.println("Cycles part 2, Task 4.1");
         float vasiaSavings = 15_000f;
@@ -105,6 +105,17 @@ public class Main {
             vasiaSavings += vasiaSavings * 0.07;
             month1++;
             System.out.println("Месяц " + month1 + ", сумма накоплений равна " + vasiaSavings + " рублей");
+        }
+        //Cycles part 2, Task 4.2
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.2");
+        float vasiaSavings1 = 15_000f;
+        int month2 = 1;
+        while (vasiaSavings1 <= 12_000_000) {
+            vasiaSavings1 += vasiaSavings1 * 0.07;
+            month2++;
+            if (month2 % 6 == 0)
+                System.out.println("Месяц " + month2 + ", сумма накоплений равна " + vasiaSavings1 + " рублей");
         }
     }
 }
