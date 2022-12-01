@@ -62,5 +62,16 @@ public class Main {
             totalMoney += summ;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + totalMoney + " рублей");
         }
+        //Cycles part 2, Task 1
+        System.out.println();
+        System.out.println("Cycles part 2, Task 1");
+        float savings = 0f;
+        int month = 0;
+        while (savings <= 2_459_000) {
+            savings += savings / 100;
+            savings += 15_000;
+            month++;
+        }
+        System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей");
     }
 }
