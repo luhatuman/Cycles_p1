@@ -85,5 +85,15 @@ public class Main {
         for (i = 10; i >= 1; i--) {
             System.out.print(" " + i);
         }
+        //Cycles part 2, Task 3
+        System.out.println("\n");
+        System.out.println("Cycles part 2, Task 3");
+        int population = 12_000_000;
+        int fertility = 17; // на 1000
+        int mortality = 8; // на 1000
+                for (int age = 1; age <= 10; age++) {
+            population += population / 1000 * (fertility-mortality);
+            System.out.println("Год " + age + " численность населения составляет " + population);
+        }
     }
 }
