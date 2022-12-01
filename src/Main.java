@@ -146,5 +146,11 @@ public class Main {
                 System.out.println(zeroYear);
             }
         }
+        //Cycles part 2, Task 6.2
+        System.out.println();
+        System.out.println("Cycles part 2, Task 6.2");
+        for (int t = 1; t <= 10; t++) {
+            System.out.println("2*" + t + "=" + t*2);
+        }
     }
 }
