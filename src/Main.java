@@ -95,5 +95,16 @@ public class Main {
             population += population / 1000 * (fertility-mortality);
             System.out.println("Год " + age + " численность населения составляет " + population);
         }
+        //Cycles part 2, Task 4
+        System.out.println();
+        System.out.println("Cycles part 2, Task 4.1");
+        float vasiaSavings = 15_000f;
+        int month1 = 1;
+        System.out.println("Месяц " + month1 + ", сумма накоплений равна " + vasiaSavings + " рублей");
+                while (vasiaSavings <= 12_000_000) {
+            vasiaSavings += vasiaSavings * 0.07;
+            month1++;
+            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + vasiaSavings + " рублей");
+        }
     }
 }
